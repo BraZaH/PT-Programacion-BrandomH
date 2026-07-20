@@ -3,6 +3,8 @@
 
 Sistema de peliculas y cartelera de CineMax
 
+Prueba Transversal 005_D
+
 """
 
 from os import system as sys

@@ -1,3 +1,14 @@
+"""
+@Brandom Hormazábal
+
+Funciones las cuales serán utilizadas en el programa
+principal, para un mejor orden.
+
+Se utilizó Type Hint para un mejor orden y legibilidad del codigo.
+
+"""
+
+
 # -------------------------------------------
 # (LEER OPCIÓN)
 # -------------------------------------------
@@ -100,6 +111,8 @@ def validar_entero_mayor0(numero: str) -> bool:
 
 # -------------------------------------------
 # (VALIDACIONES)
+# En este apartado se considero el reutilizar
+# codigo para una mayor eficiencia y evitar la redundancia.
 # -------------------------------------------
 
 def validar_codigo(codigo: str, peliculas: dict, cartelera: dict) -> bool:
@@ -159,6 +172,7 @@ def validar_cupos(cupos: int) -> bool:
 
 # -------------------------------------------
 # (AGREGAR PELICULA)
+# -------------------------------------------
 
 def agregar_pelicula(codigo: str, titulo: str, genero: str, duracion: int, clasificacion: str, idioma: str, es_3d: str, precio: int, cupos: int, cartelera: dict, peliculas: dict) -> bool:
     # Check de codigos
@@ -202,4 +216,3 @@ def eliminar_pelicula(codigo: str, peliculas: dict, cartelera: dict) -> bool:
     peliculas.pop(codigo_nuevo)
 
     return True
-
